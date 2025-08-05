@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southwind POA - Lytle, TX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        .active-tab {
+            border-bottom: 2px solid #3b82f6;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">
+                    Southwind POA
+                    <p class="text-sm font-normal text-gray-500">Lytle, Texas</p>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="#members" class="nav-link text-gray-600 hover:text-blue-500">Board Members</a>
+                    <a href="#bylaws" class="nav-link text-gray-600 hover:text-blue-500">Bylaws & Restrictions</a>
+                    <a href="#dues" class="nav-link text-gray-600 hover:text-blue-500">Pay Dues</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-500">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#home" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Home</a>
+                <a href="#members" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Board Members</a>
+                <a href="#bylaws" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Bylaws & Restrictions</a>
+                <a href="#dues" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Pay Dues</a>
+                <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100 rounded">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Welcome to Southwind</h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Your community hub for news, events, and important POA information.</p>
+                <a href="https://www.facebook.com/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd"></path></svg>
+                    Join us on Facebook
+                </a>
+            </div>
+        </section>
+
+        <!-- Board Members Section -->
+        <section id="members" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">POA Board Members</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Member Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <div class="mb-4">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/E2E8F0/4A5568?text=Member" alt="Board Member Photo">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
+                        <p class="text-gray-600">President</p>
+                    </div>
+                    <!-- Member Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <div class="mb-4">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/E2E8F0/4A5568?text=Member" alt="Board Member Photo">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Jane Smith</h3>
+                        <p class="text-gray-600">Vice President</p>
+                    </div>
+                    <!-- Member Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <div class="mb-4">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/E2E8F0/4A5568?text=Member" alt="Board Member Photo">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Peter Jones</h3>
+                        <p class="text-gray-600">Secretary/Treasurer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bylaws & Restrictions Section -->
+        <section id="bylaws" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Bylaws & Restrictions</h2>
+                <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-inner">
+                    <p class="text-gray-700 mb-6">
+                        Here you can find the official governing documents for the Southwind Property Owners Association. These documents outline the rules and regulations for our community, ensuring it remains a wonderful place to live. Please review them at your convenience.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Download Bylaws (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dues Section -->
+        <section id="dues" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Pay Annual Dues</h2>
+                <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold text-blue-500 mb-2">$150.00</h3>
+                    <p class="text-gray-600 mb-4">Per Lot, Annually</p>
+                    <p class="text-gray-500 text-sm mb-6">Dues for the current year are due by January 31st.</p>
+                    <a href="#" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out block">
+                        Pay Dues Online
+                    </a>
+                    <p class="text-xs text-gray-400 mt-4">Online payments are processed securely. A small processing fee may apply.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact the POA</h2>
+                <div class="max-w-xl mx-auto">
+                    <form id="contact-form" class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 ease-in-out">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="form-status" class="text-center mt-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="year"></span> Southwind POA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send this data to a server.
+            // For this example, we'll just show a success message.
+            formStatus.innerHTML = '<p class="text-green-500">Thank you for your message! We will get back to you soon.</p>';
+            contactForm.reset();
+
+            setTimeout(() => {
+                formStatus.innerHTML = '';
+            }, 5000);
+        });
+
+        // Active nav link highlighting on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-tab');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active-tab');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
